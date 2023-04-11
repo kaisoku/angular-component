@@ -1,13 +1,25 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from "./app.component";
-import { WarningAlertComponent } from "./alert/warningAlert/warning.component";
-import { SuccessAlertComponent } from "./alert/successAlert/success.component";
+
+import { AppComponent } from './app.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
+
 @NgModule({
-  declarations: [AppComponent, WarningAlertComponent, SuccessAlertComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
